@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>TP Datos Personales</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">Datos Personales <span>by Francisco Pérez Sammartino</span></a></div>
+				<!-- <a href="#menu">Menu</a> -->
+			</header>
+
+
+		<!-- Nav -->
+			<!-- <nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Generic</a></li>
+					<li><a href="elements.html">Elements</a></li>
+				</ul>
+			</nav> -->
+
+		<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="images/running_man.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<p>Datos personales desde 2015 accesibles <a href="https://fsammart.github.io/InfoViz/TPDatosPersonales/HealthDataFiltered.csv">aquí</a></p>
+							<h2>Datos</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/footprints.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<p>El sensor, ubicado en el telefono celular, registra los pasos diarios</p>
+							<h2>Podómetro</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/aerea.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>El sensor, ubicado en el telefono celular, registra las distancias diarias recorridas</p>
+							<h2>GPS</h2>
+						</header>
+					</div>
+				</article>
+			</section>
+
+		<!-- Two -->
+			<!-- <section id="two" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>El objetivo del trabajo es la visualización de diferentes aspectos relacionados con datos de podómetro y gps</p>
+						<h2>Visualización de la Información</h2>
+					</header>
+				</div>
+			</section> -->
+
+		<!-- Three -->
+			<section id="three" class="wrapper style2">
+				<div class="inner">
+					<header class="align-center">
+						<p>El objetivo del trabajo es la visualización de diferentes aspectos relacionados con datos de podómetro y gps</p>
+						<h2>Graficos para visualizar la información</h2>
+					</header>
+					<div class="gallery">
+						<div>
+							<h2 class="align-center">Descripción</h2>
+							<p>Se veran 3 gráficos para analizar desde diferentes perspectivas los datos de salud:</p>
+							<p>En el <b>gráfico de líneas</b> se vera la evolución de cantidad de pasos y distancia recorrida a lo largo del tiempo.</p>
+							<p>En el <b>gráfico de puntos o scatter plot</b>, se vera la relación entre las variables de distancia y cantidad de pasos, se marcará la linea de tendendencia y los intervalos de predicción.ß</p>
+							<p>En el <b>gráfico de longitud del paso</b> se vera la evolución de este a lo largo del tiempo, las unidades de tiempo mínimas visibles serán semanas, de esa forma se suavizan los puntos con el promedio semanal.</p>
+						</div>
+						<div>
+							<h2 class="align-center">Pasos y Distancias en el Tiempo</h2>
+							<div class="image fit">
+								<a href="time_series_plot.html"><img src="images/time_series.png" alt="" /></a>
+							</div>
+						</div>
+						<div>
+							<h2 class="align-center">Pasos vs Distancias</h2>
+							<div class="image fit">
+								<a href="scatter_plot.html"><img src="images/scatter.png" alt="" /></a>
+							</div>
+						</div>
+						<div>
+							<h2 class="align-center">Longitud del Paso</h2>
+							<div class="image fit">
+								<a href="step_length_plot.html"><img src="images/length_step.png" alt="" /></a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+
+			<section id="two" class="wrapper style4">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Conclusiones</h2>
+						<p>Es interesante desatacar la variación existente en el tamaño del paso, esto se puede ver en 
+						las 3 perspectivas planteadas. A partir  de la recta de tendencia que se calculo con
+						 un sistema lineal en el grafico de puntos, se obtuvieron los parametros de la linea recta.
+						 Con los parametros se obtuvo la relación existente entre la distnacia y los pasos, y con ello
+						 el valor de longitud de paso medio que es de <b>0.75 metros</b> </p>.
+					</header>
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://github.com/fsammart" class="icon fa-github"><span class="label">Twitter</span></a></li>
+						<li><a href="https://ar.linkedin.com/in/francisco-p%C3%A9rez-sammartino-73b7a137" class="icon fa-linkedin"><span class="label">Facebook</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Francisco Pérez Sammartino. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

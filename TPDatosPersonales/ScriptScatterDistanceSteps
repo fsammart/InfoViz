@@ -1,0 +1,19 @@
+library(ggplot2)
+library(plotly)
+
+health_data = read.csv("http://fsammart.github.io/InfoViz/TPDatosPersonales/HealthDataFiltered.csv" , fileEncoding = "latin1", skipNul = TRUE )
+
+model <- lm(health_data$StepsValue ~ health_data$DistanceValue)
+summary(model)
+myPredict <- predict( model , interval="predict" )
+new_df <- cbind(health_data, myPredict)
+
+p <- ggplot(new_df, aes(x=DistanceValue, y=StepsValue)) +
+    geom_point(color = rgb(0.4,0.4,0.8,0.6)) +
+    geom_line(aes(y=lwr), color = "grey", linetype = "dashed")+
+    geom_line(aes(y=upr), color = "grey", linetype = "dashed")+
+    geom_smooth(method=lm , color="black", se=FALSE) +
+    labs(x = "Distancia (km)" , y = "Cantidad de Pasos")
+
+
+ggplotly(p)
